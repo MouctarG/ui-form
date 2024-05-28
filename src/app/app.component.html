@@ -1,0 +1,14 @@
+<div class="container" [formGroup]="form">
+  <div class="row">
+    <div class="col-4">
+      <app-input-text
+        [labelInput]="'Nom'"
+        [errors]="formError.getErrorsMessages(this.form.get('nom')?.errors)"
+        [isRequired]="true"
+        [idInput]="'nameInput'"
+        [nameInput]="'nameInput'"
+        formControlName="nom">
+      </app-input-text>
+    </div>
+  </div>
+</div>
